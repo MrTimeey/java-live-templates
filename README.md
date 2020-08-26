@@ -2,7 +2,7 @@
 
 These are my custom [IntelliJ IDEA Live Templates](https://www.jetbrains.com/help/idea/using-live-templates.html) for Java that i'm currently using.
 
-I though some of them might be helpful for others so i shared them. If you got other cool custom Java live templates which you want to share, feel free to contribute!
+I thought some of them might be helpful for others so i shared them. If you got other cool custom Java live templates which you want to share, feel free to contribute!
 
 ## Export and Import
 All these custom live templates are placed in a custom group. According to [sharing live templates](https://www.jetbrains.com/help/idea/sharing-live-templates.html) I've selected only the live templates and created an export. You can import these settings if you want to get all these templates. 
