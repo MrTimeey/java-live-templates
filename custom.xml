@@ -14,4 +14,9 @@
       <option name="JAVA_CONSUMER" value="false" />
     </context>
   </template>
+  <template name="id" value="@javax.persistence.Id&#10;@javax.persistence.GeneratedValue(generator = &quot;system-uuid&quot;)&#10;@org.hibernate.annotations.GenericGenerator(name = &quot;system-uuid&quot;, strategy = &quot;uuid&quot;)&#10;private String id;&#10;&#10;" description="Creates entity id field with UUID" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>

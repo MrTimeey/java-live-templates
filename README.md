@@ -47,5 +47,28 @@ Options:
 - [ ] Use static import if possible
 - [x] Shorten FQ names
 
+### Create UUID for Spring Data Entity
+Creates ID field for entity class which will be auto generated as UUID.
+
+![Generate UUID id field for entity](entity_uuid/example.gif)
+
+Abbreviation: __id__
+
+Template text:
+```java
+@javax.persistence.Id
+@javax.persistence.GeneratedValue(generator = "system-uuid")
+@org.hibernate.annotations.GenericGenerator(name = "system-uuid", strategy = "uuid")
+private String id;
+
+
+```
+Options:
+- [x] Reformat according to style
+- [ ] Use static import if possible
+- [x] Shorten FQ names
+
+Applicable: Java - declartion
+
 ## Contributing
 Want to add some more live templates? Send a pull request or open a ticket!
