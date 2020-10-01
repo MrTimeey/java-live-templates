@@ -20,7 +20,7 @@ Simple test method generation with imported `assertThat` from AssertJ.
 
 Abbreviation: __test__
 Template text:
-```java
+```
 @org.junit.jupiter.api.Test
 public void test$Function$() {
     org.assertj.core.api.Assertions.assertThat("").isEqualTo("false");
@@ -38,7 +38,7 @@ Test method generation with imported `MockMvc` from Spring.
 
 Abbreviation: __testmvc__
 Template text:
-```java
+```
 @org.springframework.beans.factory.annotation.Autowired
 private org.springframework.test.web.servlet.MockMvc mockMvc;
 
@@ -75,6 +75,24 @@ Options:
 - [ ] Use static import if possible
 - [x] Shorten FQ names
 
+### Load file from resources directory
+Load a file from resources directory. Often used in tests to load expected data or other files.
+
+![Load resource file](resource_file/example.gif)
+
+Abbreviation: __resfile__
+
+Template text:
+```
+java.net.URL resource = getClass().getResource("$Function$");
+java.nio.file.Path filePath = java.nio.file.Paths.get(resource.toURI());
+```
+Options:
+- [x] Reformat according to style
+- [ ] Use static import if possible
+- [x] Shorten FQ names
+
+
 ### Create UUID for Spring Data Entity
 Creates ID field for entity class which will be auto generated as UUID.
 
@@ -83,7 +101,7 @@ Creates ID field for entity class which will be auto generated as UUID.
 Abbreviation: __id__
 
 Template text:
-```java
+```
 @javax.persistence.Id
 @javax.persistence.GeneratedValue(generator = "system-uuid")
 @org.hibernate.annotations.GenericGenerator(name = "system-uuid", strategy = "uuid")

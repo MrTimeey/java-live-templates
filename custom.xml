@@ -25,4 +25,10 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="resfile" value="java.net.URL resource = getClass().getResource(&quot;$Function$&quot;);&#10;java.nio.file.Path filePath = java.nio.file.Paths.get(resource.toURI());" description="Get file from resources" toReformat="true" toShortenFQNames="true">
+    <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
