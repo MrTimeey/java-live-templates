@@ -31,6 +31,34 @@ Options:
 - [x] Use static import if possible
 - [x] Shorten FQ names
 
+### JUnit Test Method with MockMvc
+Test method generation with imported `MockMvc` from Spring.
+
+![Generate mockmvc test method](test_mvc_method/example.gif)
+
+Abbreviation: __testmvc__
+Template text:
+```java
+@org.springframework.beans.factory.annotation.Autowired
+private org.springframework.test.web.servlet.MockMvc mockMvc;
+
+@org.junit.jupiter.api.Test
+public void test$Function$() throws java.lang.Exception {
+    org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder request = org.springframework.test.web.servlet.request.MockMvcRequestBuilders
+            .get("")
+            .contentType(org.springframework.http.MediaType.APPLICATION_JSON);
+
+    mockMvc.perform(request)
+            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.status().isOk())
+            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.content().contentType(org.springframework.http.MediaType.APPLICATION_JSON))
+            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath("", org.hamcrest.Matchers.is("")));
+}
+```
+Options:
+- [x] Reformat according to style
+- [ ] Use static import if possible
+- [x] Shorten FQ names
+
 ### Create SLF4J-Logger
 Creates SLF4J logger and adds the static imports.
 

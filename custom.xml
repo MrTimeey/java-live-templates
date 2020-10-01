@@ -19,4 +19,10 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="testmvc" value="@org.springframework.beans.factory.annotation.Autowired&#10;private org.springframework.test.web.servlet.MockMvc mockMvc;&#10;&#10;@org.junit.jupiter.api.Test&#10;public void test$Function$() throws java.lang.Exception {&#10;    org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder request = org.springframework.test.web.servlet.request.MockMvcRequestBuilders&#10;            .get(&quot;&quot;)&#10;            .contentType(org.springframework.http.MediaType.APPLICATION_JSON);&#10;&#10;    mockMvc.perform(request)&#10;            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.status().isOk())&#10;            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.content().contentType(org.springframework.http.MediaType.APPLICATION_JSON))&#10;            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath(&quot;&quot;, org.hamcrest.Matchers.is(&quot;&quot;)));&#10;}" description="Creates JUnit test method with MockMvc" toReformat="true" toShortenFQNames="true">
+    <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
