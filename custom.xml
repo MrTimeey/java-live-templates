@@ -6,7 +6,7 @@
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
-  <template name="test" value="@org.junit.jupiter.api.Test&#10;public void test$Function$() {&#10;    org.assertj.core.api.Assertions.assertThat(&quot;&quot;).isEqualTo(&quot;false&quot;);&#10;}" description="Creates JUnit test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="test" value="@org.junit.jupiter.api.Test&#10;public void test$Function$() throws java.io.IOException {&#10;    org.assertj.core.api.Assertions.assertThat(&quot;&quot;).isEqualTo(&quot;false&quot;);&#10;}" description="Creates JUnit test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
