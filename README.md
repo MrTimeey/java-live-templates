@@ -22,7 +22,7 @@ Abbreviation: __test__
 Template text:
 ```
 @org.junit.jupiter.api.Test
-public void test$Function$() {
+public void test$Function$() throws java.io.IOException {
     org.assertj.core.api.Assertions.assertThat("").isEqualTo("false");
 }
 ```
