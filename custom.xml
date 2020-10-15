@@ -31,4 +31,10 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="bytesfile" value="try (java.io.InputStream is = getClass().getClassLoader().getResourceAsStream(&quot;$Function$&quot;)) {&#10;    byte[] bytes = is.readAllBytes();&#10;}" description="Get byte[] from resources file" toReformat="false" toShortenFQNames="true">
+    <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
