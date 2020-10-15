@@ -75,12 +75,13 @@ Options:
 - [ ] Use static import if possible
 - [x] Shorten FQ names
 
-### Load file from resources directory
+### Load file from resources directory (for test)
 Load a file from resources directory. Often used in tests to load expected data or other files.
+Do not use in production code because it will result into an ``IllegalArgumentException``.
 
-![Load resource file](resource_file/example.gif)
+![Load resource file](test_resource_file/example.gif)
 
-Abbreviation: __resfile__
+Abbreviation: __testfile__
 
 Template text:
 ```
