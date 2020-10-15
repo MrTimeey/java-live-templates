@@ -93,6 +93,24 @@ Options:
 - [ ] Use static import if possible
 - [x] Shorten FQ names
 
+### Load byte[] from resources directory 
+Loads byte[] from resources directory. 
+
+![Load bytes from resource file](load_bytes/example.gif)
+
+Abbreviation: __bytesfile__
+
+Template text:
+```
+try (java.io.InputStream is = getClass().getClassLoader().getResourceAsStream("$Function$")) {
+    byte[] bytes = is.readAllBytes();
+}
+```
+Options:
+- [x] Reformat according to style
+- [ ] Use static import if possible
+- [x] Shorten FQ names
+
 
 ### Create UUID for Spring Data Entity
 Creates ID field for entity class which will be auto generated as UUID.
