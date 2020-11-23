@@ -22,7 +22,7 @@ Abbreviation: __test__
 Template text:
 ```
 @org.junit.jupiter.api.Test
-public void test$Function$() throws java.io.IOException {
+void test$Function$() throws java.io.IOException {
     org.assertj.core.api.Assertions.assertThat("").isEqualTo("false");
 }
 ```
@@ -43,7 +43,7 @@ Template text:
 private org.springframework.test.web.servlet.MockMvc mockMvc;
 
 @org.junit.jupiter.api.Test
-public void test$Function$() throws java.lang.Exception {
+void test$Function$() throws java.lang.Exception {
     org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder request = org.springframework.test.web.servlet.request.MockMvcRequestBuilders
             .get("")
             .contentType(org.springframework.http.MediaType.APPLICATION_JSON);
